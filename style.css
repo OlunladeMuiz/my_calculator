@@ -1,0 +1,110 @@
+  body {
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    /* ...existing code... */
+
+.calc-content {
+    background: #f3f6fd;
+    border-radius: 18px;
+    padding: 24px 32px;
+    box-shadow: 0 4px 16px rgba(60, 90, 180, 0.08);
+    margin-bottom: 32px;
+    max-width: 400px;
+   position: relative;
+   right: 100px;
+    color: #2d3a4a;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+}
+
+.calc-content h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #3a4a6b;
+    letter-spacing: 1px;
+}
+
+.calc-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #4a5a7b;
+}
+
+.calc-content ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin: 0 0 10px 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.calc-content li {
+    font-size: 0.98rem;
+    margin-bottom: 6px;
+    color: #2d3a4a;
+    padding-left: 4px;
+}
+
+    
+    .calculator {
+      background: #222;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      padding: 2rem;
+      width: 320px;
+    }
+    .display {
+      background: #333;
+      color: #fff;
+      font-size: 2rem;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: right;
+      margin-bottom: 1.5rem;
+      letter-spacing: 2px;
+      min-height: 2.5rem;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+     button {
+      background: #444;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      padding: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    button:hover {
+      background: #74ebd5;
+      color: #222;
+    }
+    .operator {
+      background: #ffb347;
+      color: #222;
+    }
+    .operator:hover {
+      background: #ffcc80;
+    }
+    .equal {
+      background: #74ebd5;
+      color: #222;
+      grid-column: span 2;
+    }
+    .clear {
+      background: #e57373;
+      color: #fff;
+    }
+    .clear:hover {
+      background: #ff8a80;
+    }
