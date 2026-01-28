@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  <script type="module" src="./src/index.js"></script>
+</head>
+<body>
+
+    <!-- Cool Calculator App HTML & CSS -->
+  <main>
+    <div class="container">
+      <section class="calc-content" aria-label="About this calculator">
+        <header class="calc-content__header">
+          <div class="calc-content__intro">
+            <h1>OLUNLADE ABDULMUIZ</h1>
+            <p class="calc-content__subtitle">A calculator app built with HTML, CSS, and JavaScript.</p>
+            <a href="#calculator" class="calc-content__cta">Jump to calculator</a>
+          </div>
+        </header>
+        <p>Features:</p>
+        <ul>
+          <li>Basic arithmetic operations: addition, subtraction, multiplication, division</li>
+          <li>Clear button to reset the calculator</li>
+          <li>Responsive design for different screen sizes</li>
+          <li>Keyboard support for easier input</li>
+        </ul>
+      </section>
+
+      <section class="calculator" id="calculator" aria-label="Calculator" data-calculator-root>
+        <div class="display" aria-live="polite" aria-atomic="true">
+          <div class="display__expression" id="calc-expression">0</div>
+          <div class="display__result" id="calc-result"></div>
+          <div class="display__error" id="calc-error" role="alert" aria-live="assertive"></div>
+        </div>
+
+        <div class="buttons" role="group" aria-label="Calculator buttons">
+          <button type="button" class="clear" data-action="clear" aria-label="Clear">C</button>
+          <button type="button" class="operator" data-action="operator" data-value="/" aria-label="Divide">÷</button>
+          <button type="button" class="operator" data-action="operator" data-value="*" aria-label="Multiply">×</button>
+          <button type="button" class="operator" data-action="operator" data-value="-" aria-label="Subtract">−</button>
+
+          <button type="button" data-action="digit" data-value="7">7</button>
+          <button type="button" data-action="digit" data-value="8">8</button>
+          <button type="button" data-action="digit" data-value="9">9</button>
+          <button type="button" class="operator" data-action="operator" data-value="+" aria-label="Add">+</button>
+
+          <button type="button" data-action="digit" data-value="4">4</button>
+          <button type="button" data-action="digit" data-value="5">5</button>
+          <button type="button" data-action="digit" data-value="6">6</button>
+          <button type="button" data-action="dot" data-value="." aria-label="Decimal point">.</button>
+
+          <button type="button" data-action="digit" data-value="1">1</button>
+          <button type="button" data-action="digit" data-value="2">2</button>
+          <button type="button" data-action="digit" data-value="3">3</button>
+          <button type="button" class="equal" data-action="evaluate" aria-label="Equals">=</button>
+
+          <button type="button" class="zero" data-action="digit" data-value="0">0</button>
+          <button type="button" data-action="paren" data-value="(" aria-label="Open parenthesis">(</button>
+          <button type="button" data-action="paren" data-value=")" aria-label="Close parenthesis">)</button>
+        </div>
+
+      </section>
+    </div>
+  </main>
+</body>
+</html>
