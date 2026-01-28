@@ -1,3 +1,5 @@
+import { formatNumberWithCommas } from '../utils/format.js';
+
 const KEY_TO_ACTION = new Map([
   ['Enter', { type: 'EVALUATE' }],
   ['=', { type: 'EVALUATE' }],
@@ -25,7 +27,7 @@ export function createDomController({ root, store }) {
 
   function render(state) {
     expressionEl.textContent = state.expression || '0';
-    resultEl.textContent = state.result ?? '';
+    resultEl.textContent = state.result == null ? '' : formatNumberWithCommas(state.result);
     errorEl.textContent = state.error ?? '';
     root.dataset.hasError = state.error ? 'true' : 'false';
   }
